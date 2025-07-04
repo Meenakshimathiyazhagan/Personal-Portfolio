@@ -2002,7 +2002,7 @@ svg {
 
 /* Small Mobile Devices */
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  /* Styles for small mobile phones */
+/* Styles for small mobile phones */
   body {
     padding-top: 60px;
   }
@@ -2094,6 +2094,7 @@ svg {
     align-items: center;
   }
 
+
   .parent {
     display: flex;
     flex-direction: column;
@@ -2109,13 +2110,17 @@ svg {
 
   .div1 img {
     width: 100%;
-    max-width: 340px;
+    max-width: 280px;
     border-radius: 50%;
+  }
+
+  .div2 .txt1{
+    padding-left: 20%;
   }
 
   .div2 {
     order: 3;
-    text-align: center;
+    text-align: justify;
     font-family: "Nunito Sans";
     font-size: 1rem;
     font-weight: 300;
@@ -2210,17 +2215,34 @@ svg {
   }
 
   .card {
-    width: 80%;
+    width: 100%;
   }
+.card-content h4 {
+  
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
 
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.image-text {
+  text-align: center;
+  font-size: 18px;
+}
   .card-heading {
     font-size: 36px;
     margin-bottom: 30px;
   }
 
   .work-ex {
-    padding: 40px 40px 0px 40px;
+    padding: 0px 0px 0px 0px;
     font-size: 14px;
+    text-align:justify;
   }
 
   .Contact {
@@ -2260,6 +2282,7 @@ svg {
   .contact-text {
     font-size: 14px;
     padding: 0 10px;
+    text-align: justify;
   }
 
   .social {
