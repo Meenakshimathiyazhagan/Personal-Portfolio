@@ -2294,6 +2294,9 @@ svg {
   .image-sm {
     width: 200px;
   }
+  .copyright-text {
+  font-size: 10px;
+  }
 }
 
 /* Extra Small Mobile Devices (portrait phones) */
