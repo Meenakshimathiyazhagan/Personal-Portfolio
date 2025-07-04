@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Project 3</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: "Nunito Sans";
+        src: url("./font/NunitoSans-Light.ttf") format("truetype");
+        font-weight: 200;
+        font-style: normal;
+      }
+      :root {
+        --font-body: "Nunito Sans", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 2% 0 0 0;
+        font-family: var(--font-body);
+      }
+
+      p {
+        font-size: 15px;
+        color: #686868;
+        font-weight: 300;
+        padding: 2% 5%;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      img {
+        padding: 20px;
+        width: 300px;
+        height: 30vh;
+        object-fit: cover;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: lighter;
+      }
+
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1% 2% 0% 2%;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%;
+        position: relative;
+      }
+
+      .header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        font-size: 24px;
+        color: #333;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button {
+        width: 70px;
+        height: 35px;
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: var(--font-body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button:hover {
+        background: black;
+        color: white;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Responsive Styles */
+
+      @media screen and (max-width: 1440px) {
+        img {
+          width: 360px;
+          height: 35vh;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        img {
+          width: 340px;
+          height: 34vh;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .header h1 {
+          font-size: 14px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+        }
+        img {
+          width: 320px;
+          height: 32vh;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        img {
+          width: 300px;
+          height: 30vh;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 280px;
+          height: 28vh;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .header h1 {
+          font-size: 12px;
+          text-align: center;
+        }
+        button {
+          width: 60px;
+          height: 30px;
+          font-size: 12px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 260px;
+          height: 26vh;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        img {
+          width: 240px;
+          height: 24vh;
+        }
+        .header h1 {
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        .header h1 {
+          font-size: 10px;
+          text-align: center;
+        }
+        button {
+          width: 55px;
+          height: 28px;
+          font-size: 11px;
+        }
+        p {
+          font-size: 12px;
+        }
+        img {
+          width: 200px;
+          height: 20vh;
+        }
+      }
+    </style>
+    <div class="header">
+      <button onclick="history.back()">Back</button>
+      <h1>E-COMMERCE WEBSITE BUILT WITH MERN STACK</h1>
+    </div>
+
+    <p>
+  <strong>Glaze & Grace</strong> is a <strong>creative e-commerce website</strong> developed as an <strong>individual
+  placement project</strong> for the <strong>Edunet Foundation</strong>. It reflects my passion for
+  <strong>clean design, simplicity, and natural aesthetics</strong>—values that are central
+  to both the brand and the <strong>user experience</strong>. The site is <strong>fully responsive
+  and dynamic</strong>, ensuring a <strong>seamless and engaging shopping experience</strong> across
+  all devices, whether accessed from a <strong>desktop, tablet, or smartphone</strong>.
+
+  Led by an artist committed to <strong>elegance, mindfulness, and craftsmanship</strong>,
+  Glaze & Grace features products with <strong>clean lines, pure forms, and a timeless
+  style</strong> that speaks to those who value <strong>intentional living</strong>. Every item is
+  crafted using <strong>high-quality, natural materials</strong>, celebrating <strong>imperfections
+  that add unique character and warmth</strong>. The collection includes <strong>handmade
+  ceramic pieces, elegant silver jewellery</strong>, and <strong>handpicked vintage finds</strong>—
+  all <strong>curated to tell a visual story</strong> and <strong>evoke emotional connection</strong>. 
+
+  My <strong>design philosophy</strong> emphasizes <strong>slowing down, being intentional</strong>, and staying
+  true to <strong>personal values</strong>. For me—and for Glaze & Grace—the guiding principle
+  is simple: <strong>live better, not faster</strong>. This philosophy is <strong>woven into every
+  element of the website</strong>, from the <strong>gentle color palette and clean UI</strong> to the
+  <strong>thoughtful flow of navigation and user interaction</strong>. It's not just an
+  e-commerce platform; it’s a <strong>digital reflection of mindful living</strong> and
+  <strong>purposeful creativity</strong>.
+  <br /><br />
+
+  <strong>Passion is energy</strong>, and this project is a true reflection of that energy.
+  I believe that when you <strong>create with heart and genuine excitement</strong>, it
+  naturally shines through the product. This <strong>enthusiasm drives the user
+  experience</strong> and invites others who share similar values to engage. <strong>Glaze &
+  Grace</strong> is designed for individuals who value <strong>thoughtful craftsmanship,
+  minimalist beauty</strong>, and <strong>meaningful experiences</strong>.
+
+  <strong>Nature</strong> has played a significant role in shaping my vision and ideas.
+  I spend time outdoors daily—whether <strong>walking through a park, tending to a
+  garden</strong>, or simply <strong>observing the sky</strong>. These <strong>moments of connection with nature</strong>
+  slow me down and give space for <strong>inspiration to flow</strong>. Many design decisions,
+  from <strong>earth-tone color schemes to organic textures</strong>, were influenced by
+  <strong>natural elements</strong> like <strong>leaves, stones, and specific flowers</strong> I’ve encountered.
+  These <strong>natural cues</strong> are subtly infused into the <strong>aesthetic of the website</strong> and
+  <strong>product presentation</strong>. 
+
+  In building Glaze & Grace, I also aimed to <strong>push my technical skills</strong> by
+  developing a complete, real-world application using the <strong>MERN stack—
+  MongoDB, Express.js, React.js, and Node.js</strong>. This allowed me to integrate a
+  <strong>clean and modern front-end</strong> with a <strong>secure and scalable back-end</strong>. The result
+  is a <strong>fully functional website</strong> that offers <strong>real-time updates, secure
+  authentication, smooth user flow</strong>, and <strong>responsive design</strong> tailored for a
+  <strong>beautiful experience on all screen sizes</strong>. 
+
+  This individual project not only showcases my <strong>full-stack development
+  abilities</strong> but also reflects my <strong>values, creativity</strong>, and <strong>commitment to
+  building something that is both technically sound and emotionally
+  meaningful</strong>.
+</p>
+
+    <center>
+      <div class="image-grid">
+        <img src="projects photos/Screenshot 2025-06-27 221344.png" alt=""  />
+        <img src="projects photos/Screenshot 2025-06-27 220417.png" alt=""  />
+        <img src="projects photos/Screenshot 2025-06-27 220441.png" alt=""  />
+        <img src="projects photos/Screenshot 2025-06-27 220513.png" alt=""  />
+      </div>
+    </center>
+  </body>
+</html>

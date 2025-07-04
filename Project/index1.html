@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <style>
+      @font-face {
+        font-family: "Nunito Sans";
+        src: url("./font/NunitoSans-Light.ttf") format("truetype");
+        font-weight: 200;
+        font-style: normal;
+      }
+      :root {
+        --font-body: "Nunito Sans", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 2% 0 0 0;
+        font-family: var(--font-body);
+      }
+
+      p {
+        font-size: 15px;
+        color: #686868;
+        font-weight: 300;
+        padding: 2% 5%;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      img {
+        padding: 20px;
+        width: 300px;
+        height: 30vh;
+        object-fit: cover;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      h1 {
+        font-weight: lighter;
+      }
+
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1% 2% 0% 2%;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%;
+        position: relative;
+      }
+
+      .header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        font-size: 24px;
+        color: #333;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button {
+        width: 70px;
+        height: 35px;
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: var(--font-body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button:hover {
+        background: black;
+        color: white;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Responsive Styles */
+
+      @media screen and (max-width: 1440px) {
+        img {
+          width: 360px;
+          height: 35vh;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        img {
+          width: 340px;
+          height: 34vh;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .header h1 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+        }
+        img {
+          width: 320px;
+          height: 32vh;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        img {
+          width: 300px;
+          height: 30vh;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 280px;
+          height: 28vh;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .header h1 {
+          font-size: 18px;
+          text-align: center;
+        }
+        button {
+          width: 60px;
+          height: 30px;
+          font-size: 12px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 260px;
+          height: 26vh;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        img {
+          width: 240px;
+          height: 24vh;
+        }
+        .header h1 {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        .header h1 {
+          font-size: 14px;
+          text-align: center;
+        }
+        button {
+          width: 55px;
+          height: 28px;
+          font-size: 11px;
+        }
+        p {
+          font-size: 12px;
+        }
+        img {
+          width: 200px;
+          height: 20vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <button onclick="history.back()">Back</button>
+      <h1>AI CHAT BOT - MAD CHAT AI</h1>
+    </div>
+
+    <p>
+      <strong>MAD CHAT AI</strong> is an innovative conversational AI chatbot
+      designed to provide interactive, intelligent, and engaging user
+      experiences by integrating
+      <strong>natural language processing (NLP)</strong> and
+      <strong>gamification elements</strong>. Developed by
+      <strong>R. Akshidha, M. Dhanalakshmi, and M. Meenakshi</strong>, this
+      project blends
+      <strong>AI-driven communication with entertainment</strong>, making it
+      more than just a standard chatbot. Built using
+      <strong>Python, HTML, CSS, Node.js, MongoDB</strong>, and the
+      <strong>Ollama Llama 3.2 model</strong>, MADCHAT offers users a
+      <strong>seamless and intuitive interface</strong> for both conversation
+      and interactive learning. Users can
+      <strong>log in, chat with the AI</strong>, and enhance their experience
+      with an <strong>exclusive gamification feature</strong>, creating an
+      engaging and intelligent digital assistant. The core functionality of
+      MADCHAT revolves around <strong>understanding user queries</strong> and
+      providing <strong>meaningful responses</strong> through advanced
+      <strong>AI-based text processing</strong>. The chatbot can interpret,
+      analyze, and respond to user inputs dynamically, ensuring
+      <strong>natural and smooth conversations</strong>. Unlike conventional
+      chatbots, MADCHAT doesn't just answer questions – it offers a
+      <strong>smart and interactive dialogue</strong>, making conversations more
+      engaging. Additionally, the <strong>user interface</strong> is carefully
+      designed to be <strong>visually appealing and user-friendly</strong>,
+      ensuring accessibility for all users. From
+      <strong>seamless navigation</strong> to
+      <strong>quick response generation</strong>, MADCHAT enhances digital
+      interaction by making AI more <strong>human-like and responsive</strong>.
+      <br /><br />
+      One of the standout features of MADCHAT is its
+      <strong>gamification system</strong>, which adds a unique layer of
+      interaction. The game section includes four main game categories:
+      <strong
+        >Time-Based Games, Word and Letter Games, Knowledge Challenges, and
+        Adventure Exploration Games</strong
+      >
+      – each with <strong>three sub-games</strong> and
+      <strong>ten question-based challenges</strong>. This makes the chatbot not
+      only a conversational AI but also an
+      <strong>interactive learning and entertainment platform</strong>. The game
+      mode encourages users to
+      <strong>test their knowledge, solve puzzles</strong>, and
+      <strong>engage in challenges</strong>, making MADCHAT an AI-powered
+      assistant with <strong>educational and entertainment value</strong>.
+      <strong>Security and data management</strong> are also key priorities in
+      MADCHAT. The
+      <strong>MongoDB database securely stores user information</strong>
+      including <strong>emails, IDs, names, and encrypted passwords</strong> to
+      ensure <strong>safe authentication and access</strong>. With a
+      <strong>well-structured development framework</strong> and
+      <strong>scalable architecture</strong>, MADCHAT has the potential for
+      future expansion, including
+      <strong>voice-based interactions, mobile applications</strong>, and
+      <strong>AI-driven enhancements</strong>. Designed with
+      <strong>innovation and user engagement</strong> in mind, MADCHAT is not
+      just an AI chatbot but a
+      <strong>step forward in interactive conversational intelligence</strong>,
+      seamlessly blending <strong>AI-powered responses</strong> with a
+      <strong>dynamic and entertaining user experience</strong>.
+    </p>
+
+    <center>
+      <div class="image-grid">
+        <img src="projects photos/Screenshot 2025-03-04 230617.png" alt="" />
+        <img src="projects photos/Screenshot 2025-03-04 232229.png" alt="" />
+        <img src="projects photos/Screenshot 2025-03-04 224831.png" alt="" />
+        <img src="projects photos/Screenshot 2025-03-04 230153.png" alt="" />
+      </div>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Project 2</title>
+  </head>
+  <body>
+    <style>
+        @font-face {
+        font-family: "Nunito Sans";
+        src: url("./font/NunitoSans-Light.ttf") format("truetype");
+        font-weight: 200;
+        font-style: normal;
+      }
+      :root {
+        --font-body: "Nunito Sans", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 2% 0 0 0;
+        font-family: var(--font-body);
+      }
+
+      p {
+        font-size: 15px;
+        color: #686868;
+        font-weight: 300;
+        padding: 2% 5%;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      img {
+        padding: 20px;
+        width: 300px;
+        height: 30vh;
+        object-fit: cover;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: lighter;
+      }
+
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1% 2% 0% 2%;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%;
+        position: relative;
+      }
+
+      .header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        font-size: 24px;
+        color: #333;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button {
+        width: 70px;
+        height: 35px;
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: var(--font-body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      button:hover {
+        background: black;
+        color: white;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Responsive Styles */
+
+      @media screen and (max-width: 1440px) {
+        img {
+          width: 360px;
+          height: 35vh;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        img {
+          width: 340px;
+          height: 34vh;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .header h1 {
+          font-size: 14px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+        }
+        img {
+          width: 320px;
+          height: 32vh;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        img {
+          width: 300px;
+          height: 30vh;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 280px;
+          height: 28vh;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .header h1 {
+          font-size: 12px;
+          text-align: center;
+        }
+        button {
+          width: 60px;
+          height: 30px;
+          font-size: 12px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 260px;
+          height: 26vh;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        img {
+          width: 240px;
+          height: 24vh;
+        }
+        .header h1 {
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        .header h1 {
+          font-size: 10px;
+          text-align: center;
+        }
+        button {
+          width: 55px;
+          height: 28px;
+          font-size: 11px;
+        }
+        p {
+          font-size: 12px;
+        }
+        img {
+          width: 200px;
+          height: 20vh;
+        }
+      }
+    </style>
+    <div class="header">
+      <button onclick="history.back()">Back</button>
+      <h1>
+INSIGHT STREAM – NAVIGATE THE NEWS IS A FULL-STACK WEB APPLICATION
+</h1>
+    </div>
+
+    <p>
+  <strong>Insight Stream Navigate the News</strong> is a <strong>full-stack web application</strong>
+  developed as my <strong>individual placement project</strong> for the <strong>Edunet Foundation</strong>. I
+  collaborated with <strong>four teammates</strong> to build a platform that helps <strong>editors,
+  analysts, and readers</strong> filter the overwhelming volume of daily headlines
+  into a clear, actionable stream of insights. Inspired by research from the
+  <strong>Media Insight Project</strong> — a collaboration between the <strong>American Press Institute</strong>
+  and <strong>The AP NORC Center</strong> — this platform enables organizations to analyze
+  where audiences engage, where they lose interest, and how they can
+  optimize strategies for <strong>better reader retention</strong> and <strong>sustainable revenue</strong>.
+  At its core is an <strong>Automated Insights Feed</strong> powered by <strong>live APIs</strong> that pull
+  <strong>real-time news, traffic spikes, and keyword trends</strong>, displaying each item
+  with a quick recommendation for <strong>immediate action</strong>. Users can
+  <strong>personalize their experience</strong> by <strong>pinning topics, rearranging widgets,
+  switching themes</strong>, and <strong>collapsing panels</strong> for better focus. Built-in tools
+  like <strong>commenting, sharing via email</strong>, and <strong>workspace exports</strong> support team
+  collaboration.
+  From a technical standpoint, the application is built using the <strong>MERN stack</strong>.
+  <strong>React, React Router, and Tailwind CSS</strong> create a fully <strong>responsive</strong> and
+  <strong>dynamic front-end</strong> using <strong>Grid and Flexbox layouts</strong>. <strong>React Context API</strong> stores
+  <strong>persistent user preferences</strong> and <strong>bookmarks</strong>, while <strong>useState</strong> manages fast,
+  responsive interactions. The backend is developed using <strong>Node.js and
+  Express.js</strong>, which aggregate data from multiple sources, apply filters, and
+  ensure <strong>secure API handling through CORS</strong>.
+  <br><br>
+  <strong>MongoDB Atlas</strong> is used for storing
+  <strong>user data, saved content, and analytical logs</strong>. <strong>Continuous integration</strong> via
+  <strong>GitHub Actions</strong> runs <strong>tests, linters, and performance audits</strong>, while <strong>Docker
+  deployments to Render</strong> ensure stable and rollback-capable hosting.
+  <strong>Performance metrics</strong> are tracked using <strong>Web Vitals</strong>, and <strong>error monitoring</strong> is
+  managed with <strong>Sentry</strong>. Planned future enhancements include integrating
+  <strong>OpenAI models</strong> to <strong>summarize articles, apply sentiment analysis</strong>, and
+  <strong>personalize content</strong> through a <strong>recommendation engine</strong>. UX updates will
+  include <strong>voice search, offline support, multilingual translation, live
+  polls</strong>, and <strong>real-time news tickers via WebSockets</strong>. <strong>Monetization features</strong>
+  such as <strong>premium tiers, affiliate content</strong>, and <strong>respectful native ads</strong> are
+  also in consideration. Known <strong>technical issues</strong> such as <strong>rate limits,
+  infinite scroll bugs on legacy devices, large image loads</strong>, and <strong>minor SEO
+  challenges</strong> are documented and resolved through <strong>agile sprints</strong> and
+  <strong>regression testing</strong>. <strong>Insight Stream</strong> demonstrates how <strong>strong engineering</strong> and
+  <strong>thoughtful design</strong> can transform chaotic information into clarity. By
+  combining <strong>AI, full-stack development</strong>, and <strong>user-focused features</strong>, this
+  application proves that <strong>meaningful, personalized news delivery</strong> can benefit
+  both organizations and the public.
+</p>
+
+    <center>
+      <div class="image-grid">
+        <img
+          src="projects photos/WhatsApp Image 2025-04-03 at 18.18.26_b1daae24.jpg"
+          alt=""
+        />
+        <img
+          src="projects photos/WhatsApp Image 2025-04-03 at 18.18.25_e467837e.jpg"
+          alt=""
+        />
+        <img
+          src="projects photos/WhatsApp Image 2025-04-03 at 18.18.27_1904fef6.jpg"
+          alt=""
+        />
+        <img
+          src="projects photos/WhatsApp Image 2025-04-03 at 18.18.25_09886fb3.jpg"
+          alt=""
+        />
+      </div>
+    </center>
+  </body>
+</html>
