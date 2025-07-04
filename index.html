@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <meta name="description" content="Meenakshi's Portfolio">
+    <title>MM Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">  
+  </head>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script>
+        (function(){
+    emailjs.init({
+      publicKey: "VQvBoDKPHtDwKviDs",
+    });
+  })();
+    </script>
+  <body>
+    
+    <header>
+      <nav>
+        <a class="home-link" href="#" onclick="scrollToTop(event)">PORTFOLIO</a>
+
+        <input type="checkbox" id="sidebar-active" />
+        <label id="overlay" for="sidebar-active"></label>
+
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke="#000"
+            stroke-width="1"
+            stroke-linecap="round"
+            fill="none"
+          >
+            <line x1="3" y1="5" x2="20" y2="5" />
+            <line x1="3" y1="11" x2="20" y2="11" />
+            <line x1="3" y1="17" x2="20" y2="17" />
+          </svg>
+        </label>
+
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <!-- Close Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000"
+              stroke-width="1"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="4" x2="20" y2="20" />
+              <line x1="20" y1="4" x2="4" y2="20" />
+            </svg>
+          </label>
+          <a href="#" onclick="scrollToTop(event)">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#certificate">CERTIFICATES</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="content">
+        <section
+          class="section"
+          style="
+            background-image: url('portfolio images/background.jpg');
+          "
+        >
+          <div class="content-wrapper">
+            <p class="main-content">
+              <span class="a1">Hello there! I'm </span><br />
+<span class="a2">Meenakshi Mathiyazhagan</span><br />
+<span class="a3">I’m a Web Designer and Web Developer.</span><br />
+<span class="a4">
+  As a Web Designer and Developer, I craft responsive,
+                user-friendly <br>
+                websites using HTML, CSS, JavaScript, and the MERN
+                stack-ensuring <br> intuitive,
+                seamless experiences across all devices.
+</span>
+
+
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section id="about" class="about">
+<div  class="parent">
+    <div class="div1">
+      <img class="img1" src="portfolio images/my photo 1.jpg" alt="" width="450px">
+    </div>
+    <div class="div2">
+      <p class="main2-content">
+          <span class="txt1">About me!</span><br><br>
+          <span class="txt2">
+I am <strong>Meenakshi Madhiyazhagan</strong>. I recently completed my <strong>B.Sc. in Computer Science</strong> from <strong>Dr. MGR Janaki College of Arts and Science for Women</strong>. I have done two internships — one in <strong>Web Development</strong> at <strong>DLK Technologies</strong> and another in <strong>MERN Stack</strong> at <strong>Edunet Foundation</strong>. I have worked on three projects: an <strong>AI chatbot</strong> for my final-year project, an <strong>Insight Stream-News Application</strong> for <strong>Naan Mudhalvan</strong>, and a <strong>custom e-commerce website</strong> using the <strong>MERN stack</strong>. I am currently <strong>looking for job opportunities</strong>. I have good knowledge of <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and <strong>ReactJS</strong>. I enjoy building <strong>responsive</strong> and <strong>user-friendly websites</strong>, and I focus on creating <strong>smooth</strong> and <strong>attractive user interfaces</strong> that work well on all devices.
+          </span><br><br>
+        </p>
+    </div>
+</div>
+    </section>
+    <br>
+    <section id="skills" class="skills">
+        <div class="skills-container">
+      <h2 class="section-heading">Skills</h2>
+<div class="parent1">
+  <!-- Left side -->
+  <div class="div3">
+    <h4 class="h4-2">Technical Skills</h4>
+       <div class="div3-1">
+         <div class="skill-row"><label class="lang">HTML 5</label><label class="perse">90%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 90%;"></div></div>
+
+    <div class="skill-row"><label class="lang">CSS 3</label><label class="perse">85%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 85%;"></div></div>
+
+    <div class="skill-row"><label class="lang">JavaScript</label><label class="perse">75%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 75%;"></div></div>
+
+    <div class="skill-row"><label class="lang">Bootstrap</label><label class="perse">80%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 80%;"></div></div>
+
+    <div class="skill-row"><label class="lang">React JS</label><label class="perse">70%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 70%;"></div></div>
+
+    <div class="skill-row"><label class="lang">Node JS & Express JS</label><label class="perse">48%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 48%;"></div></div>
+
+    <div class="skill-row"><label class="lang">MongoDB</label><label class="perse">50%</label></div>
+    <div class="progress-container"><div class="progress-bar" style="width: 50%;"></div></div>
+       </div>
+  </div>
+
+  <!-- Right side -->
+  <div class="div4">
+  <h4 class="h4-1">Personality Skills</h4>
+  <div class="div4-1">
+    <div class="progress-container1">
+      <div class="circle" id="circle1">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="95" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Creativity</p>
+      </div>
+
+      <div class="circle" id="circle3">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="97" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Teamwork</p>
+      </div>
+
+      <div class="circle" id="circle2">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="90" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Communication</p>
+      </div>
+
+      <div class="circle" id="circle1">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="85" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Adaptability</p>
+      </div>
+
+      <div class="circle" id="circle3">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="92" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Punctual</p>
+      </div>
+
+      <div class="circle" id="circle2">
+        <div class="circular-progress" data-inner-circle-color="white" data-percentage="80" data-progress-color="rgb(112, 112, 112)" data-bg-color="#eeeeee">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <p id="ps">Problem Solving</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+    </section>
+    <section id="projects" class="projects">
+<h2 class="card-heading">Projects</h2>
+<div class="projects-container">
+ <div class="card">
+  <div class="image-container">
+    <img src="portfolio images/images (4).png" alt="Avatar" class="card-image" />
+    <div class="image-text">AI CHAT BOT</div>
+  </div>
+  <div class="card-content">
+    <h4>Final Year Project</h4>
+    <p>Mad Chat AI &nbsp;<a href="Project/index1.html" style="color: black;">Know more</a><span class="arrow" >↗</span></p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+    <img src="portfolio images/images.png" alt="Avatar" class="card-image" />
+    <div class="image-text" style="text-align: center;">NEWS SREAMING APP</div>
+  </div>
+  <div class="card-content">
+    <h4>Naan Mudhalvan Project</h4>
+    <p>Insight Stream &nbsp;<a href="Project/index2.html" style="color: black;">Know more</a><span class="arrow" >↗</span></p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+    <img src="portfolio images/images1.png" alt="Avatar" class="card-image" />
+    <div class="image-text" style="text-align: center;">E-COMMERCE<br>WEBSITE</div>
+  </div>
+  <div class="card-content">
+   <h4>Edu Net Project</h4>
+    <p>Glaze & Grace &nbsp;<a href="Project/index3.html" style="color: black;">Know more</a><span class="arrow" >↗</span></p>
+  </div>
+</div>
+
+  </div>
+
+  <p class="work-ex">During my college years, I worked on several projects that helped me build strong skills in web development and AI. One of my main projects was an AI Chat Bot that used natural language processing (NLP) to talk with users. It could answer questions, help with tasks, and work smoothly across different devices. I also made sure it could keep learning to give better answers over time.
+
+Another project I created was Insight Stream, a news platform that shows news updates in a clear and simple way. It included real-time alerts, support for different languages, and tools like topic grouping and sentiment analysis to help users understand the news better.
+
+I also built an online shopping website called Glaze & Grace using the MERN stack (MongoDB, Express.js, React.js, Node.js). It had a clean design, live updates, and secure payments—making shopping easy and safe. This project showed my skills in building full websites from start to finish.
+
+</p>
+    </section>
+      
+   <!-- Certificates Section -->
+<section id="certificate" class="Certificate">
+  <h2 class="card-heading">Certificates</h2>
+
+  <div class="projects-container">
+    <div class="card">
+      <div class="image-container">
+        <img src="portfolio images/images (4).png" alt="MERN Certificate" class="card-image" />
+        <div class="image-text">INTERNSHIP</div>
+      </div>
+      <div class="card-content">
+        <h4>MERN Web Application</h4>
+        <p>Edu Net Foundation &nbsp;<a href="Certificate/index1.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="portfolio images/images.png" alt="HTML5 Certificate" class="card-image" />
+        <div class="image-text" style="text-align: center;">WEB DEVELOPMENT</div>
+      </div>
+      <div class="card-content">
+        <h4>HTML 5</h4>
+        <p>Great Learning &nbsp;<a href="Certificate/index2.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="portfolio images/images1.png" alt="CSS3 Certificate" class="card-image" />
+        <div class="image-text" style="text-align: center;">MONGO DB</div>
+      </div>
+      <div class="card-content">
+        <h4>Mongo DB Node.js</h4>
+        <p>Naan Mudhalvan &nbsp;<a href="Certificate/index3.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <div class="card" id="projects-container">
+      <div class="image-container">
+        <img src="portfolio images/images.png" alt="Internship Certificate" class="card-image" />
+        <div class="image-text">INTERNSHIP</div>
+      </div>
+      <div class="card-content">
+        <h4>Web Development</h4>
+        <p>DLK Technology &nbsp;<a href="Certificate/index4.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+
+    <div class="card" id="projects-container">
+      <div class="image-container">
+        <img src="portfolio images/images1.png" alt="MongoDB Certificate" class="card-image" />
+        <div class="image-text">MONGO DB</div>
+      </div>
+      <div class="card-content">
+        <h4>Mongo DB</h4>
+        <p>Naan Mudhalvan &nbsp;<a href="Certificate/index5.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+
+    <div class="card" id="projects-container">
+      <div class="image-container">
+        <img src="portfolio images/images (4).png" alt="Skills Development Certificate" class="card-image" />
+        <div class="image-text" style="text-align: center;">SKILLS DEVELOPMENT</div>
+      </div>
+      <div class="card-content">
+        <h4>Dreams of Skills Development</h4>
+        <p>DR. MJC (My College) &nbsp;<a href="Certificate/index6.html" style="color: black;">Certificate</a><span class="arrow">↗</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<!-- Contact Section -->
+<section id="contact" class="Contact">
+  <h2 class="card-heading">Contact</h2>
+  <div class="contact-text">
+    <p>
+      I'm always open to new opportunities, collaborations, or just a friendly hello!<br>
+      Use the contact form below or connect with me on social media.
+    </p>
+  </div>
+
+  <div class="contact-container">
+    <div class="div5">
+      <div class="footer-contact">
+        <form id="contact-form" class="contact-form">
+  <div class="input-container">
+    <input type="text" placeholder="Name" name="name" id="name" required />
+  </div>
+  <div class="input-container">
+    <input type="email" placeholder="Email" name="email" id="email" required />
+  </div>
+  <div class="input-container">
+    <textarea placeholder="Message" name="message" rows="3" id="comment" required></textarea>
+  </div>
+  <button type="submit">SEND</button>
+</form>
+
+      </div>
+    </div>
+
+    <div class="div6">
+      <div class="social-media">
+        <img src="portfolio images/my photo 1.jpg" alt="Profile" width="180px" class="image-sm"/>
+        <br>
+        <span class="social">Meenakshi Mathiyazhagan</span><br />
+        <!-- Instagram -->
+        <div class="icons">
+          <a href="https://www.instagram.com/meenakshi_mathiyazhagan/" class="fa fa-instagram icons"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/meenakshi-mathiyazhagan-b84683292/" class="fa fa-linkedin icons"></a>&nbsp;&nbsp;
+<a href="https://github.com/Meenakshimathiyazhagan" class="fa fa-github icons"></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+       <p class="copyright-text">
+    &copy; 2025 Meenakshi Mathiyazhagan. All rights reserved.
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+  <div class="cursor"></div>
+
+<div id="custom-alert" class="alert-box" style="display: none;">
+  <p>Email sent successfully!</p>
+  <div class="button-wrapper">
+    <button onclick="closeAlert()">OK</button>
+  </div>
+</div>
+
+
+
+</html>
+    
+<script>
+  function scrollToTop(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+ 
